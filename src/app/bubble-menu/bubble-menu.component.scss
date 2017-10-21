@@ -1,0 +1,52 @@
+.bubble-menu {
+    margin-top:14em;
+}
+
+h2 {
+    font-size: 30px;
+    opacity: none!important;
+    z-index: 100;
+}
+
+.category {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 4em;
+    color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    cursor: pointer;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+
+    &:hover {
+        opacity: 0.9;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+    }
+
+    &.green {
+        background-color: lightgreen;
+    }
+    &.orange {
+        background-color: orange;
+    }
+    &.violet {
+        background-color: violet;
+    }
+    &.blue {background-color: lightskyblue;}
+}
+
+@media screen and (max-width: 992px) {
+
+    .bubble-menu {
+        margin-top:5em;
+        margin: 50px;
+    }
+        .category { 
+            height: 150px;
+            width: 150px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }

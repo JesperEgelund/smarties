@@ -12,15 +12,20 @@ import {
   MatToolbarModule,
   MatSidenavModule,
   MatButtonModule,
+  MatIconModule,
 } from '@angular/material';
 import { ChatRepairComponent } from './chat-repair/chat-repair.component';
+import { BubbleMenuComponent } from './bubble-menu/bubble-menu.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FacilitiesComponent,
-    ChatRepairComponent
+    ChatRepairComponent,
+    BubbleMenuComponent,
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,8 @@ import { ChatRepairComponent } from './chat-repair/chat-repair.component';
     AppRoutingModule,
       MatToolbarModule,
       MatSidenavModule,
-      MatButtonModule
+      MatButtonModule,
+      MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

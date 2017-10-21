@@ -1,0 +1,55 @@
+h1 {
+    color: white;
+}
+
+
+
+.display-box {
+    margin-top: 220px;
+    width: 100%;
+    height: 400px;
+    display: block;
+    cursor: pointer;    
+    background-color: lightblue;
+    opacity: 0.8;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    h1 {
+        font-size: 12em;
+        color: white;
+        font-weight: 500;
+        margin-left: 100px;
+        line-height: 21rem;        
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .bg-box {
+        padding: 1em;
+        background-color: lightskyblue;
+        opacity: 0.9;
+    }
+}
+
+
+.container {
+    height: calc(100vh - 64px);
+}
+
+
+@media screen and (max-width: 599px) {
+
+    .container {
+        height: calc(100vh - 56px);
+    }
+}
