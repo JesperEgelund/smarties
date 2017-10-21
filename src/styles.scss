@@ -1,0 +1,21 @@
+
+/*  global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    width: 16em;
+    height: 3em;
+}
+
+.bg-image__fullwidth {
+    background-image: url(./assets/hk_bg2.jpg);
+    background-position: right center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+    }

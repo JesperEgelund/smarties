@@ -3,22 +3,32 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
+import { FacilitiesComponent } from './facilities/facilities.component';
+
+import { AppRoutingModule } from './app-routing/app-routing.module';
+
 
 import {
   MatToolbarModule,
-  MatSidenavModule
-
+  MatSidenavModule,
+  MatButtonModule,
 } from '@angular/material';
+import { ChatRepairComponent } from './chat-repair/chat-repair.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FacilitiesComponent,
+    ChatRepairComponent
   ],
   imports: [
     BrowserModule,
+    FlexLayoutModule,
+    AppRoutingModule,
       MatToolbarModule,
       MatSidenavModule,
-    FlexLayoutModule,
+      MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
