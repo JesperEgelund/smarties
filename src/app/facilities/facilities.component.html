@@ -1,11 +1,26 @@
 <div class="bg-image__fullwidth container">
+<header fxLayout="row">
+  <div fxFlex="20"  fxLayoutAlign="start center">
+  <button class="home" mat-icon-button routerLink="" routerLinkActive="active">
+    <mat-icon>home</mat-icon> <span>Smarties</span>
+  </button>
+</div>
+<div fxFlex="1 1 20" fxFlexOffset="60" fxLayoutAlign="end center">    
+  <button class="user-button" color="accent" mat-button>
+      <mat-icon>perm_identity</mat-icon> <span>Welcome John</span>
+    </button>
+</div>
+</header>
   <div fxLayout="column">
-    <div fxFlex="50px"></div>
-    <div fxFlex="700px" fxLayout="row" fxFlex.lt-md="400px" fxLayoutAlign="center center">
-  
-      <app-bubble-menu ></app-bubble-menu>
+    <div fxFlex="auto" fxLayout="row" fxFlex.lt-md="400px" fxLayoutAlign="center center">
+      <app-bubble-menu></app-bubble-menu>
     </div>
-    <div fxFlex="auto" fxFlexAlign="center">
-    </div>
+    <div *ngIf="chat" fxFlex="50%">
+      <app-chat-repair ></app-chat-repair>
   </div>
+</div>
+  <button (click)="chat = !chat" class="floating-fab" color="primary" mat-fab>
+    <mat-icon *ngIf="!chat; else close">question_answer</mat-icon>
+    <ng-template #close><mat-icon>close</mat-icon></ng-template>
+  </button>
 </div>

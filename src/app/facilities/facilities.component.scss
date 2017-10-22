@@ -1,16 +1,57 @@
 
 
 .container {
-    height: calc(100vh - 64px);
+    height: 100vh;
+}
+
+app-bubble-menu {
+    margin-top: 8em;
+    margin-left: -20em;
 }
 
 
+.user-button {
+    margin-top: 1em;
+    margin-right: 1em;
+}
+.home {
+color: white;
+font-size: 24px!important;
+left: 28px;
+top: 10px;
+}
 
+.floating-fab {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 75px;
+    height: 75px;
+    font-size: 30px;
+    }
+
+    
 @media screen and (max-width: 599px) {
 
     .container {
         height: calc(100vh - 56px);
     }
+
+    app-bubble-menu {
+        margin-top: 5em;
+        margin-left: 0;
+    }
+
+    .floating-fab {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        }
+
 }
+
 
 

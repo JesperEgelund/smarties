@@ -1,4 +1,26 @@
-
+.chat{
+    position: fixed;
+    background-color: white;
+    bottom: 180px;
+    right: 50px;
+    border-radius: 3%;
+    border: 1px solid lightgray;
+}
 
 iframe {
+    padding: 20px;
+    border: none;
 }
+
+@media screen and (max-width: 659px) {
+    .chat {
+        bottom:0px;
+        right: 0px;
+        margin: 0 10px 0 10px;
+        border: none;
+    }
+
+    iframe {
+        padding: 0;
+    }
+ }

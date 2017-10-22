@@ -3,14 +3,14 @@
       <div fxFlex="50px"></div>
       <div fxFlex="700px" fxLayout="row" fxFlex.lt-md="400px" fxLayoutAlign="center center">
         <div fxFlex="6%" fxFlex.lt-md="2%"></div>
-        <div fxFlex="500px">
-          <h1 class="mat-display-1 bg-box">
+        <div fxFlex="500px" fxHide.lt-md>
+          <h1 class="mat-display-1">
             Smarties
             <br /> The Happy Way
             <br />of Living</h1>
         </div>
         <div fxFlex="70%" fxHide.lt-md>
-          <div class="display-box" routerLink="/facilities"><h1 mat-display-1>Services</h1></div>
+          <div class="display-box" [@slideAnimation]='state' routerLink="/facilities"><h1 mat-display-1><mat-icon>arrow_forward</mat-icon></h1></div>
         </div>
       </div>
       <div fxFlex="auto" fxFlexAlign="center">
