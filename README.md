@@ -1,4 +1,6 @@
 # Smarties
+Smartone Hackathon Project // 21-22 October
+Submitted version [Smarties](https://jesperegelund.github.io/smarties)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
