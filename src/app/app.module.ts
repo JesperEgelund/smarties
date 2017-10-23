@@ -1,12 +1,14 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 import { AppComponent } from './app.component';
 import { FacilitiesComponent } from './facilities/facilities.component';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 
@@ -17,6 +19,9 @@ import {
   MatIconModule,
   MatListModule,
   MatCardModule,
+  MatDialogModule,
+  MatDialogRef,
+  MAT_DIALOG_DATA,
 } from '@angular/material';
 import { ChatRepairComponent } from './chat-repair/chat-repair.component';
 import { BubbleMenuComponent } from './bubble-menu/bubble-menu.component';
@@ -26,6 +31,8 @@ import { MaintenanceComponent } from './facilities/maintenance/maintenance.compo
 import { PaymentsComponent } from './facilities/payments/payments.component';
 import { AlertsComponent } from './facilities/alerts/alerts.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LocationsComponent } from './locations/locations.component';
+import { DialogComponent } from './locations/dialog/dialog.component';
 
 
 @NgModule({
@@ -40,6 +47,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     PaymentsComponent,
     AlertsComponent,
     NavbarComponent,
+    LocationsComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +61,10 @@ import { NavbarComponent } from './navbar/navbar.component';
       MatIconModule,
       MatListModule,
       MatCardModule,
+      MatDialogModule,
   ],
+  entryComponents:
+  [ DialogComponent ],
   providers: [],
   bootstrap: [AppComponent]
 })

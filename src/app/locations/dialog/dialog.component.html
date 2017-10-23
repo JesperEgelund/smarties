@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>We found some great shopping places nearby</h2>
+<mat-dialog-content>
+  <div fxLayout="row">
+    <div fxFlex="1 1 70">
+        <iframe width="100%" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=22.382391999999996~114.19224699999998&lvl=15&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no"> </iframe>
+    </div>
+    <div fxFlex="1 1 30">
+        <mat-list>
+            <h3 mat-subheader>Shopping Places</h3>
+            <mat-list-item *ngFor="let place of places">
+              <mat-icon mat-list-icon>place</mat-icon>
+              <h4 mat-line>{{place.name}}</h4>
+            </mat-list-item>
+          </mat-list>
+   </div>
+  </div>
+</mat-dialog-content>
+  
+   

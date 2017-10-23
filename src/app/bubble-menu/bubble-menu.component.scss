@@ -23,22 +23,18 @@
 
     &.green {
         background-color: green;
-        height: 200px;
-        width: 200px;
+
     }
     &.orange {
         background-color: orange;
-        height: 200px;
-        width: 200px;
+
     }
     &.violet {
         background-color: violet;
-        height: 200px;
-        width: 200px;
+
     }
     &.blue {background-color: lightskyblue;
-        height: 200px;
-        width: 200px;}
+  
 }
 
 @media screen and (max-width: 992px) {
@@ -50,4 +46,4 @@
         h2 {
             font-size: 20px;
         }
-    }
+    }}

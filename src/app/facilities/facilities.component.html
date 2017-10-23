@@ -5,7 +5,9 @@
     <mat-icon>home</mat-icon> <span>Smarties</span>
   </button>
 </div>
-<div fxFlex="1 1 20" fxFlexOffset="60" fxLayoutAlign="end center">    
+<app-locations fxFlex="20" fxFlexOffset="40"></app-locations>
+
+<div fxFlex="1 1 20" fxHide.lt-md fxLayoutAlign="end center">    
   <button class="user-button" color="accent" mat-button>
       <mat-icon>perm_identity</mat-icon> <span>Welcome John</span>
     </button>
@@ -20,7 +22,7 @@
   </div>
 </div>
   <button (click)="chat = !chat" class="floating-fab" color="primary" mat-fab>
-    <mat-icon *ngIf="!chat; else close">question_answer</mat-icon>
+    <mat-icon *ngIf="!chat; else close">android</mat-icon>
     <ng-template #close><mat-icon>close</mat-icon></ng-template>
   </button>
 </div>
